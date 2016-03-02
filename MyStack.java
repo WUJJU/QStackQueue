@@ -5,11 +5,12 @@ public class MyStack{
     public class Stack{
      public Stack next;
      public Object value;
+     public int min;
 
      public Stack(Object b){
       value=b;
       next=null;
-
+      
      }
     }
     public Stack top;
