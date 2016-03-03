@@ -14,13 +14,17 @@ public class Stack{
         al.add(v);
 	}
 	public int peak(){
-		return al.get(al.size()-1);
+		if(al.size()==0) throw new NullPointerException();
+        else return al.get(al.size()-1);
 	}
 	public void pop(){
 		if(al.size()==0) throw new  EmptyStackException();
 		al.remove(al.size()-1);
 	}
-
+   public Boolean isFull(){
+   	 if(al.size()==capacity) return true;
+   	 else return false;
+   }
 	public static void main(String[] args) {
 		Stack st=new Stack(3);
 		st.push(1);
