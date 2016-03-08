@@ -25,6 +25,10 @@ public class Stack{
    	 if(al.size()==capacity) return true;
    	 else return false;
    }
+   public Boolean isEmpty(){
+   	if(al.size()==0) return true;
+   	else return false;
+   }
 	public static void main(String[] args) {
 		Stack st=new Stack(3);
 		st.push(1);
